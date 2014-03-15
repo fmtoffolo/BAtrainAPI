@@ -9,18 +9,18 @@ module.exports = function(app) {
                 console.log('got data ' + ramal);
                 parseData.parseNow(ramal, body, function(err, body) {
                     if (!err) {
-                        res.send(JSON.stringify(body));
+                        res.jsonp(body);
                     } else {
-                        res.send(JSON.stringify(err.message));
+                        res.json(err.message);
                     }
                 });
             } else {
-                res.send(JSON.stringify(err.message));
+                res.json(err.message);
             }
 
         });
     });
     app.get('/', function(req, res) {
-        res.send(JSON.stringify('Invalid query. Please try: "laplata", "tigre", "mitre", "jlsuarez" or "moreno"'))
+        res.json('Invalid query. Please try: "laplata", "tigre", "mitre", "jlsuarez" or "moreno"')
     })
 };
