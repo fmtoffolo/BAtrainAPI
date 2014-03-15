@@ -1,0 +1,23 @@
+{
+    "name": "BAtrainAPIV2",
+    "version": "0.0.0",
+    "description": "Trains of Buenos Aires API",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "express": "*",
+        "request": "*",
+        "logfmt": "~0.23.0"
+    },
+    "engines": {
+        "node": "0.10.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "github.com/fmtoffolo/BAtrainAPIV2"
+    },
+    "author": "Fernando Toffolo",
+    "license": "BSD-2-Clause"
+}
