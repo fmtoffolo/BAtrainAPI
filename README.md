@@ -47,10 +47,14 @@ Agregar el nombre de la line detras de la base url y listo.
 
 ej: http://localhost:5000/tigre
 
+##JSONP para el front end
+agregale un callback y listo
+ej: http://localhost:5000/tigre?callback=yourfunction
+
 ##Probá el demo aca
 http://batrainapi.herokuapp.com/
 
-**Por ahora no devuelve un JSONP ni usa CORS. Pero para usar la API desde el back-end anda bien.**
+**Por ahora no usa CORS. Pero tiene jsonp.**
 
 
 
