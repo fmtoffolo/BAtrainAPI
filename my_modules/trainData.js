@@ -55,7 +55,10 @@ var getRawData = function(ramal, callback) {
         //make request
         request({
             url: url,
-            qs: queryParams
+            qs: queryParams,
+            headers: {
+                'Referer': 'http://trenes.mininterior.gov.ar/v2_pg/mapas/mitre/mapa_mitre_tigre.php'
+			}
         }, function(error, response, body) {
             console.log('request done');
             if (!error && response.statusCode === 200) {
