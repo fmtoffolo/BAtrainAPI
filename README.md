@@ -51,9 +51,6 @@ ej: http://localhost:5000/tigre
 agregale un callback y listo
 ej: http://localhost:5000/tigre?callback=yourfunction
 
-##Probá el demo aca
-http://batrainapi.herokuapp.com/
-
 **Por ahora no usa CORS. Pero tiene jsonp.**
 
 
